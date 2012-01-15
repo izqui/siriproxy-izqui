@@ -19,8 +19,6 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
     
     if (response =~ /yes/i)
         say "OK" 
-    end
-    
     else 
         resp2 = ask "Tell me that you liked it and I'll kill you"
         if (resp2 == /yes/i)

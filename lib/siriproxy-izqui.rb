@@ -17,20 +17,16 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   listen_for /what do you think about android/i do
     response = ask "I think is crab. Have you ever tried?"
     
-    if (response =~ /yes/i){
-      
+    if (response =~ /yes/i)
         say "OK" 
-    }
     
-    else {
-        
+    
+    else 
         resp2 = ask "Tell me that you liked it and I'll kill you"
+        if (resp2 == /yes/i)
+          say "Killing you..."
         
-        if (resp2 == /yes/i){
-         
-            say "Killing you..."
-        }
-    }
+    
     
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
   end

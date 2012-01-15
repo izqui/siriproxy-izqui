@@ -2,11 +2,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "siri_izqui"
+  s.name        = "siriproxy_izqui"
   s.version     = "0.0.1" 
   s.authors     = ["izqui"]
-  s.email       = [""]
-  s.homepage    = ""
+  s.email       = ["izqui97@gmail.com"]
+  s.homepage    = "http://about.me/izqui"
   s.summary     = %q{My hacks}
   s.description = %q{Copied from SiriProxy first example.  }
 

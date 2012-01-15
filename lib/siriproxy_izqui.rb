@@ -1,10 +1,10 @@
 require 'cora'
 require 'siri_objects'
-require 'pp'
 
 
 
-class SiriProxy::Plugin::Example < SiriProxy::Plugin
+
+class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   
   listen_for /Test for the world/i do
     say "Hi Jorge! That was my first Siri hack. @izqui9 :D" #say something to the user!

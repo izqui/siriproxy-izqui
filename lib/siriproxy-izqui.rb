@@ -21,7 +21,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
         
         resp2 = ask "Tell me that you liked it and I'll kill you"
         if (resp2 =~ /yes/i)
-          say "Killing you... 😡😡"
+          say "Killing you..."
         
         end
     else say "Ok. Thank God."

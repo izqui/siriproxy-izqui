@@ -4,7 +4,7 @@ require 'siri_objects'
 
 
 
-class SiriProxy::Plugin::Example < SiriProxy::Plugin
+class SiriProxy::Plugin::siri_izqui < SiriProxy::Plugin
   
   listen_for /Test for the world/i do
     say "Hi Jorge! That was my first Siri hack. @izqui9 :D" #say something to the user!

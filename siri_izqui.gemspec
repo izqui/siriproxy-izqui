@@ -2,7 +2,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "izqui_siri"
+  s.name        = "siri_izqui"
   s.version     = "0.0.1" 
   s.authors     = ["izqui"]
   s.email       = [""]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{My hacks}
   s.description = %q{Copied from SiriProxy first example.  }
 
-  s.rubyforge_project = "siriproxy-example"
+  s.rubyforge_project = "siri_izqui"
 
   s.files         = `git ls-files 2> /dev/null`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/* 2> /dev/null`.split("\n")

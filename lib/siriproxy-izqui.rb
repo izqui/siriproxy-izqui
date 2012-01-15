@@ -20,11 +20,11 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
     if (response =~ /yes/i)
         
         resp2 = ask "Tell me that you liked it and I'll kill you"
-        if (resp2 =~ /yes/i)
-          say "Killing you..."
+        if (resp2 =~ /i didn't/i || resp2 =~ /no/i)
+          say "Thank God!"
         
         end
-    else say "Ok. Thank God."
+    else say "You deserve to die."
     end
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
   end

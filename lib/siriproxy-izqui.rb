@@ -2,9 +2,6 @@ require 'cora'
 require 'siri_objects'
 
 
-
-
-
 class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
 
   

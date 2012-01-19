@@ -17,7 +17,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   
   listen_for /what do you think about android/i do
     
-    allAricles()
+    allArticles()
     object = SiriAddViews.new
     object.make_root(last_ref_id)
     button = SiriButton.new("Yes", [])

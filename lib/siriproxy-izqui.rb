@@ -5,7 +5,7 @@ require 'net/http'
 
 class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
 
-  def allArticles
+  def allArticles()
   
   say 'hello'
   end
@@ -17,7 +17,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   
   listen_for /what do you think about android/i do
     
-    allAricles
+    allAricles()
     object = SiriAddViews.new
     object.make_root(last_ref_id)
     button = SiriButton.new("Yes", [])

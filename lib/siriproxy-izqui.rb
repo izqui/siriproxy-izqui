@@ -20,7 +20,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
     allArticles()
     object = SiriAddViews.new
     object.make_root(last_ref_id)
-    button = SiriButton.new("Yes", [])
+    button = SiriButton.new("Yes", [allArticles()])
     object.views << button
     send_object object
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!

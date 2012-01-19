@@ -9,7 +9,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   
   url = 'http://feeds.feedburner.com/ipadsfera'
   xml_data = Net::HTTP.get_response(URI.parse(url)).body
-  say xml_data
+  print xml_data
   end
   listen_for /i love you/i do
     say "Hi Jorge! That was my first Siri hack. @izqui9 :D" #say something to the user!

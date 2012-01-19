@@ -16,7 +16,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
     object.make_root(last_ref_id)
     button = SiriButton.new("Yes", "url:http://about.me/izqui")
     object.views << button
-    send_objects object
+    send_object object
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
   end
   

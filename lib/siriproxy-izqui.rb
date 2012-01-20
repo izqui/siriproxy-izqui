@@ -11,8 +11,11 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   xml_data = Net::HTTP.get_response(URI.parse(url)).body
   
   parsed = XmlSimple.xml_in(xml_data);
-  
-  print parsed
+  data['Result'].each do |item|
+    print "iTEEEEEEEEMMMMMMMMMM"
+    print item
+  end
+ 
   end
   listen_for /i love you/i do
     say "Hi Jorge! That was my first Siri hack. @izqui9 :D" #say something to the user!

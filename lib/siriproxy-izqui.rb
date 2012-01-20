@@ -11,7 +11,7 @@ class SiriProxy::Plugin::Izqui < SiriProxy::Plugin
   xml_data = Net::HTTP.get_response(URI.parse(url)).body
   
   parsed = XmlSimple.xml_in(xml_data);
-  data['Result'].each do |item|
+  parsed['Result'].each do |item|
     print "iTEEEEEEEEMMMMMMMMMM"
     print item
   end
